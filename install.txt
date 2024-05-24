@@ -1,5 +1,5 @@
 charset,UTF-8
 type,ghost
 
-name,Simplicity Template
-directory,simplicity_template
+name,Under the Stars
+directory,under_the_stars_gyz

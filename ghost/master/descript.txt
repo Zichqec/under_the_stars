@@ -1,16 +1,16 @@
 charset,UTF-8
 
-name,Simplicity Template
+name,Under the Stars
 type,ghost
 
 shiori,yaya.dll
 
-craftman,
-craftmanw,
-craftmanurl,
+craftman,Galla & YudiDoodles & Zichqec
+craftmanw,Galla & YudiDoodles & Zichqec
+craftmanurl,https://github.com/Zichqec/under_the_stars
 
-sakura.name,Simplicity
-kero.name,Template
+sakura.name,TODO
+kero.name,blank
 
 icon,icon.ico
 
