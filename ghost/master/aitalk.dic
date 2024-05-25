@@ -18,5 +18,5 @@ OnAiTalk
 
 RandomTalk : nonoverlap_pool
 {
-	":joy:"
+	"\0\b[6]\s[0]That %(group) of stars looks like %(constellations)..."
 }

@@ -12,6 +12,7 @@ dic, boot.dic
 dic, meta.dic
 dic, other.dic
 dic, sakura_menu.dic
+dic, wonderings.dic
 dic, word.dic
 
 msglang,english
