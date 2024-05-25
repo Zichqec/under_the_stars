@@ -9,9 +9,8 @@ OnAiTalk
 		LastTalk = ChainTalk
 	}
 	
-	_waittime = 5000
-	if "\e" _in_ LastTalk; LastTalk = REPLACE(LastTalk,"\e","\_w[%(_waittime)] \e")
-	else; LastTalk += "\_w[%(_waittime)] "
+	if "\e" _in_ LastTalk; LastTalk = REPLACE(LastTalk,"\e","\w8\w8 \e")
+	else; LastTalk += "\w8\w8 "
 	
 	LastTalk
 }
@@ -19,4 +18,10 @@ OnAiTalk
 RandomTalk : nonoverlap_pool
 {
 	"\0\b[6]\s[0]That %(group) of stars looks like %(constellations)..."
+	"\0\b[6]\s[20]Imagine if each of those stars was a pearl... \s[23]There would be so many oysters! \s[24]Or one very hard working oyster..."
+	"\0\b[6]\s[22]Maybe if you wove together enough kelp,%(br)you could make a bed that floats along the star bed..."
+	"\0\b[6]\s[24]How far would you have to swim to see different stars?"
+	"\0\b[6]\s[3]Ohh, my tail won't stop wriggling...!"
+	"\0\b[6]\s[2]Why don't the stars ever drift down%(br)here...? \s[22]Does something eat them first? Or... \s[21]do they not die?"
+	"\0\b[6]\s[23]I bet there's lots of interesting krill up there. \s[3]Unless stars \f[italic,1]are\f[italic,default] krill? ... \s[24]That \f[italic,1]would\f[italic,default] be pretty interesting krill, if that was true."
 }
