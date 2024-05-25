@@ -5,7 +5,8 @@ OnMouseDoubleClick
 
 OnSakuraMenu : all
 {
-	"\C\![lock,balloonrepaint]\c\0\s[0]\b[0]\![set,autoscroll,disable]\_q\f[anchorvisitedfontcolor,default.anchor]"
+	//if SHIORI3FW.Eventid != "OnMouseDoubleClick"; "\C\![lock,balloonrepaint]\c"
+	"\0\s[0]\b[0]\![set,autoscroll,disable]\_q\f[anchorvisitedfontcolor,default.anchor]"
 	
 	if SHIORI3FW.BalloonName == "Reflections of Starlight"; "\n[290]"
 	
@@ -42,6 +43,8 @@ OnWonderings : all
 {
 	"\0\b[0]\_q\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]"
 	
+	_spacing = "\_l[0,]\_l[4.5em]"
+	
 	/*
 	_full = 1
 	for _i = 0; _i < ARRAYSIZE(Wonderings.Topic); _i++
@@ -53,11 +56,11 @@ OnWonderings : all
 		"\_a[OnPickWondering.Topic]Topic\_a"
 		"\__q[OnPickWondering.Topic]Topic\__q"
 	}
-	"  "
+	_spacing
 	for _i = 0; _i < ARRAYSIZE(Wonderings.Topic); _i++
 	{
 		_item = Wonderings.Topic.Indexes[_i]
-		if _item == 1; "\__q[OnPickWondering.Topic,%(_i)]\![*]\__q  "
+		if _item == 1; "\__q[OnPickWondering.Topic,%(_i),tooltip]\![*]\__q  "
 	}
 	*/
 	
@@ -71,11 +74,11 @@ OnWonderings : all
 		"\_a[OnPickWondering.Family]Family\_a"
 		"\__q[OnPickWondering.Family]Family\__q"
 	}
-	"  "
+	_spacing
 	for _i = 0; _i < ARRAYSIZE(Wonderings.Family); _i++
 	{
 		_item = Wonderings.Family.Indexes[_i]
-		if _item == 1; "\__q[OnPickWondering.Family,%(_i)]\![*]\__q  "
+		if _item == 1; "\__q[OnPickWondering.Family,%(_i),tooltip]\![*]\__q  "
 	}
 	"\n\n"
 	
@@ -89,11 +92,11 @@ OnWonderings : all
 		"\_a[OnPickWondering.Home]Home\_a"
 		"\__q[OnPickWondering.Home]Home\__q"
 	}
-	"  "
+	_spacing
 	for _i = 0; _i < ARRAYSIZE(Wonderings.Home); _i++
 	{
 		_item = Wonderings.Home.Indexes[_i]
-		if _item == 1; "\__q[OnPickWondering.Home,%(_i)]\![*]\__q  "
+		if _item == 1; "\__q[OnPickWondering.Home,%(_i),tooltip]\![*]\__q  "
 	}
 	"\n\n"
 	
@@ -104,16 +107,19 @@ OnWonderings : all
 	}
 	switch _full
 	{
-		"\_a[OnPickWondering.StarBed]StarBed\_a"
-		"\__q[OnPickWondering.StarBed]StarBed\__q"
+		"\_a[OnPickWondering.StarBed]Star bed\_a"
+		"\__q[OnPickWondering.StarBed]Star bed\__q"
 	}
-	"  "
+	_spacing
 	for _i = 0; _i < ARRAYSIZE(Wonderings.StarBed); _i++
 	{
 		_item = Wonderings.StarBed.Indexes[_i]
-		if _item == 1; "\__q[OnPickWondering.StarBed,%(_i)]\![*]\__q  "
+		if _item == 1; "\__q[OnPickWondering.StarBed,%(_i),tooltip]\![*]\__q  "
 	}
 	"\n\n"
+	
+	"\n"
+	"\![*]\q[Back,OnSakuraMenu]"
 }
 
 /*
@@ -204,6 +210,41 @@ PickWondering : nonoverlap_pool
 		_i
 	}
 	else; -1
+}
+
+On_balloon_tooltip : all
+{
+	if "OnPickWondering." _in_ reference1 && reference3 == "tooltip"
+	{
+		_topic = reference1[1,"."]
+		
+		if _topic == "Family"
+		{
+			switch reference2
+			{
+				"Lumejellies"
+				"Worries"
+				"Making plans"
+			}
+		}
+		elseif _topic == "Home"
+		{
+			switch reference2
+			{
+				"Coral"
+				"House"
+				"Vents"
+			}
+		}
+		elseif _topic == "StarBed"
+		{
+			switch reference2
+			{
+				"Bright water"
+				"Itchy"
+			}
+		}
+	}
 }
 
 OnTalkRateChange
