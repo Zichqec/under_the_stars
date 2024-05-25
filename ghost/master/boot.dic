@@ -3,13 +3,33 @@ OnFirstBoot
 	stroke = 0
 	LastTalk = ""
 	
+	/*
 	Wonderings.Topic.Indexes = IARRAY
 	foreach Wonderings.Topic; _entry
 	{
 		Wonderings.Topic.Indexes ,= 0
 	}
+	*/
 	
-	"\1\s[-1]\0\s[0]yo"
+	Wonderings.Family.Indexes = IARRAY
+	foreach Wonderings.Family; _entry
+	{
+		Wonderings.Family.Indexes ,= 0
+	}
+	
+	Wonderings.Home.Indexes = IARRAY
+	foreach Wonderings.Home; _entry
+	{
+		Wonderings.Home.Indexes ,= 0
+	}
+	
+	Wonderings.StarBed.Indexes = IARRAY
+	foreach Wonderings.StarBed; _entry
+	{
+		Wonderings.StarBed.Indexes ,= 0
+	}
+	
+	"\1\s[-1]\0\s[0]\b[6]\s[2]Ah...! ... \s[1]What...? \s[0]Whoa... \s[3]There's so many stars up here!"
 }
 
 OnInitialize
