@@ -5,8 +5,8 @@ type,ghost
 
 shiori,yaya.dll
 
-craftman,Galla & YudiDoodles & Zichqec
-craftmanw,Galla & YudiDoodles & Zichqec
+craftman,Galla & YudiDoodles & Zichqec & OmochiYoichi
+craftmanw,Galla & YudiDoodles & Zichqec & おもちよいち (OmochiYoichi)
 craftmanurl,https://github.com/Zichqec/under_the_stars
 
 sakura.name,TODO
@@ -15,3 +15,5 @@ kero.name,blank
 icon,icon.ico
 
 sstp.allowunspecifiedsend,0
+
+balloon,Reflections of Starlight

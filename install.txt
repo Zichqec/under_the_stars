@@ -2,4 +2,4 @@ charset,UTF-8
 type,ghost
 
 name,Under the Stars
-directory,under_the_stars_gyz
+directory,under_the_stars_goyz

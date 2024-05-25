@@ -2,8 +2,8 @@ charset,UTF-8
 type,shell
 
 name,Default Shell
-craftman,YudiDoodles & Zichqec
-craftmanw,YudiDoodles & Zichqec
+craftman,YudiDoodles & OmochiYoichi
+craftmanw,YudiDoodles & おもちよいち (OmochiYoichi)
 craftmanurl,https://github.com/Zichqec/under_the_stars
 
 seriko.alignmenttodesktop,free
