@@ -8,10 +8,15 @@ OnAiTalk
 	{
 		LastTalk = ChainTalk
 	}
+	
+	_waittime = 5000
+	if "\e" _in_ LastTalk; LastTalk = REPLACE(LastTalk,"\e","\_w[%(_waittime)] \e")
+	else; LastTalk += "\_w[%(_waittime)] "
+	
 	LastTalk
 }
 
 RandomTalk : nonoverlap_pool
 {
-	
+	":joy:"
 }
