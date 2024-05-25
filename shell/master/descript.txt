@@ -8,3 +8,23 @@ craftmanurl,https://github.com/Zichqec/under_the_stars
 
 seriko.alignmenttodesktop,free
 seriko.use_self_alpha,1
+
+
+menu.foreground.font.color.r,255
+menu.foreground.font.color.g,255
+menu.foreground.font.color.b,255
+
+menu.background.font.color.r,255
+menu.background.font.color.g,255
+menu.background.font.color.b,255
+
+menu.disable.font.color.r,175
+menu.disable.font.color.g,175
+menu.disable.font.color.b,175
+
+menu.separator.color.r,175
+menu.separator.color.g,175
+menu.separator.color.b,175
+
+menu.background.alignment,lefttop + repeatx + repeaty
+menu.foreground.alignment,lefttop + repeatx + repeaty
