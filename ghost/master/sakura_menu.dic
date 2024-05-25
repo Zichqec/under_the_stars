@@ -1,3 +1,8 @@
+OnMouseDoubleClick
+{
+	if reference5 == 0 && reference0 == 0; OnSakuraMenu
+}
+
 OnSakuraMenu : all
 {
 	"\C\![lock,balloonrepaint]\c\0\s[0]\b[0]\![set,autoscroll,disable]\_q"
