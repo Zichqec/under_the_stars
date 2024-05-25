@@ -1,24 +1,31 @@
-SakuraMenuGreetings : nonoverlap
-{
-	"Hello."
-	"How can I help you?"
-}
-
-//Because there is an all modifier here, you don't need to write -- between menu options
 OnSakuraMenu : all
 {
-	"\0\s[0]\b2\![set,autoscroll,disable]"
-	if SHIORI3FW.Eventid == "OnMouseDoubleClick"; SakuraMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
+	"\C\![lock,balloonrepaint]\c\0\s[0]\b[0]\![set,autoscroll,disable]\_q"
 	
-	"\n\n\_q"
+	if SHIORI3FW.BalloonName == "Reflections of Starlight"; "\n[300]"
 	
-	"\![*]\q[Talk to me,OnAiTalk]"
-	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
+	"\![*]\q[Reflect,OnAiTalk]"
+	if LastTalk != ""; "  \![*]\q[Revisit reflection,OnLastTalk]"
 	"\n\n"
 	
-	"\![*]\q[Change talk rate,OnTalkRateMenu]\n\n"
+	"\![*]\q[Wonderings,OnTalkRateMenu]\n\n"
 	
-	"\![*]\q[Nevermind,blank]"	
+	"\![*]Frequency of reflections:\n     "
+	_talkrate = ("30,30s","60,1m","180,3m","300,5m","600,10m")
+	foreach _talkrate; _rate
+	{
+		switch aitalkinterval == TOINT(_rate[0])
+		{
+			"\__q[OnTalkRateChange,%(_rate[0])]%(_rate[1])\__q"
+			"\f[underline,1]\_a[OnTalkRateChange,%(_rate[0])]%(_rate[1])\_a\f[underline,default]"
+		}
+		"  "
+	}
+	
+	"\n\n"
+	
+	"\![*]\q[Cancel,blank]"
+	"\![unlock,balloonrepaint]"
 }
 
 OnLastTalk
@@ -36,7 +43,7 @@ OnTalkRateMenu : all
 	elseif aitalkinterval == 300; _talkrate = "5 minutes"
 	elseif aitalkinterval == 600; _talkrate = "10 minutes"
 	
-	"\0\s[0]\b2\![set,autoscroll,disable]\_q"
+	"\0\s[0]\b[0]\![set,autoscroll,disable]\_q"
 	"Current interval: %(_talkrate)\n\n"
 	
 	"\![*]\q[Off,OnTalkRateChange,0]\n"
@@ -52,4 +59,5 @@ OnTalkRateMenu : all
 OnTalkRateChange
 {
 	aitalkinterval = TOINT(reference0)
+	OnSakuraMenu
 }
