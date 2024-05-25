@@ -5,7 +5,7 @@ OnMouseDoubleClick
 
 OnSakuraMenu : all
 {
-	"\C\![lock,balloonrepaint]\c\0\s[0]\b[0]\![set,autoscroll,disable]\_q"
+	"\C\![lock,balloonrepaint]\c\0\s[0]\b[0]\![set,autoscroll,disable]\_q\f[anchorvisitedfontcolor,default.anchor]"
 	
 	if SHIORI3FW.BalloonName == "Reflections of Starlight"; "\n[300]"
 	
@@ -13,7 +13,7 @@ OnSakuraMenu : all
 	if LastTalk != ""; "  \![*]\q[Revisit reflection,OnLastTalk]"
 	"\n\n"
 	
-	"\![*]\q[Wonderings,OnTalkRateMenu]\n\n"
+	"\![*]\q[Wonderings,OnWonderings]\n\n"
 	
 	"\![*]Frequency of reflections:\n     "
 	_talkrate = ("30,30s","60,1m","180,3m","300,5m","600,10m")
@@ -38,27 +38,172 @@ OnLastTalk
 	LastTalk
 }
 
-OnTalkRateMenu : all
-{	
-	//This is just setting up a label, you may need to add to it or tweak it if you change what rates are available
-	_talkrate = "Off"
-	if aitalkinterval == 30; _talkrate = "30 seconds"
-	elseif aitalkinterval == 60; _talkrate = "1 minute"
-	elseif aitalkinterval == 180; _talkrate = "3 minutes"
-	elseif aitalkinterval == 300; _talkrate = "5 minutes"
-	elseif aitalkinterval == 600; _talkrate = "10 minutes"
+OnWonderings : all
+{
+	"\0\b[0]\_q\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]"
 	
-	"\0\s[0]\b[0]\![set,autoscroll,disable]\_q"
-	"Current interval: %(_talkrate)\n\n"
+	/*
+	_full = 1
+	for _i = 0; _i < ARRAYSIZE(Wonderings.Topic); _i++
+	{
+		if Wonderings.Topic.Indexes[_i] != 1; _full = 0
+	}
+	switch _full
+	{
+		"\_a[OnPickWondering.Topic]Topic\_a"
+		"\__q[OnPickWondering.Topic]Topic\__q"
+	}
+	"  "
+	for _i = 0; _i < ARRAYSIZE(Wonderings.Topic); _i++
+	{
+		_item = Wonderings.Topic.Indexes[_i]
+		if _item == 1; "\__q[OnPickWondering.Topic,%(_i)]\![*]\__q  "
+	}
+	*/
 	
-	"\![*]\q[Off,OnTalkRateChange,0]\n"
-	"\![*]\q[30 seconds,OnTalkRateChange,30]\n"
-	"\![*]\q[1 minute,OnTalkRateChange,60]\n"
-	"\![*]\q[3 minutes,OnTalkRateChange,180]\n"
-	"\![*]\q[5 minutes,OnTalkRateChange,300]\n"
-	"\![*]\q[10 minutes,OnTalkRateChange,600]\n"
-	"\n"
-	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Nevermind,blank]"
+	_full = 1
+	for _i = 0; _i < ARRAYSIZE(Wonderings.Family); _i++
+	{
+		if Wonderings.Family.Indexes[_i] != 1; _full = 0
+	}
+	switch _full
+	{
+		"\_a[OnPickWondering.Family]Family\_a"
+		"\__q[OnPickWondering.Family]Family\__q"
+	}
+	"  "
+	for _i = 0; _i < ARRAYSIZE(Wonderings.Family); _i++
+	{
+		_item = Wonderings.Family.Indexes[_i]
+		if _item == 1; "\__q[OnPickWondering.Family,%(_i)]\![*]\__q  "
+	}
+	"\n\n"
+	
+	_full = 1
+	for _i = 0; _i < ARRAYSIZE(Wonderings.Home); _i++
+	{
+		if Wonderings.Home.Indexes[_i] != 1; _full = 0
+	}
+	switch _full
+	{
+		"\_a[OnPickWondering.Home]Home\_a"
+		"\__q[OnPickWondering.Home]Home\__q"
+	}
+	"  "
+	for _i = 0; _i < ARRAYSIZE(Wonderings.Home); _i++
+	{
+		_item = Wonderings.Home.Indexes[_i]
+		if _item == 1; "\__q[OnPickWondering.Home,%(_i)]\![*]\__q  "
+	}
+	"\n\n"
+	
+	_full = 1
+	for _i = 0; _i < ARRAYSIZE(Wonderings.StarBed); _i++
+	{
+		if Wonderings.StarBed.Indexes[_i] != 1; _full = 0
+	}
+	switch _full
+	{
+		"\_a[OnPickWondering.StarBed]StarBed\_a"
+		"\__q[OnPickWondering.StarBed]StarBed\__q"
+	}
+	"  "
+	for _i = 0; _i < ARRAYSIZE(Wonderings.StarBed); _i++
+	{
+		_item = Wonderings.StarBed.Indexes[_i]
+		if _item == 1; "\__q[OnPickWondering.StarBed,%(_i)]\![*]\__q  "
+	}
+	"\n\n"
+}
+
+/*
+OnPickWondering.Topic : nonoverlap_pool
+{
+	_size = ARRAYSIZE(Wonderings.Topic)
+	_num = PickWondering(_size,Wonderings.Topic.Indexes)
+	if reference0 != ""; _num = reference0
+	
+	if _num != -1
+	{
+		Wonderings.Topic.Indexes[_num] = 1
+		Wonderings.Topic[_num]
+	}
+	else
+	{
+		parallel Wonderings.Topic
+	}
+}
+*/
+
+OnPickWondering.Family : nonoverlap_pool
+{
+	_size = ARRAYSIZE(Wonderings.Family)
+	_num = PickWondering(_size,Wonderings.Family.Indexes)
+	if reference0 != ""; _num = reference0
+	
+	if _num != -1
+	{
+		Wonderings.Family.Indexes[_num] = 1
+		Wonderings.Family[_num]
+	}
+	else
+	{
+		parallel Wonderings.Family
+	}
+}
+
+OnPickWondering.Home : nonoverlap_pool
+{
+	_size = ARRAYSIZE(Wonderings.Home)
+	_num = PickWondering(_size,Wonderings.Home.Indexes)
+	if reference0 != ""; _num = reference0
+	
+	if _num != -1
+	{
+		Wonderings.Home.Indexes[_num] = 1
+		Wonderings.Home[_num]
+	}
+	else
+	{
+		parallel Wonderings.Home
+	}
+}
+
+OnPickWondering.StarBed : nonoverlap_pool
+{
+	_size = ARRAYSIZE(Wonderings.StarBed)
+	_num = PickWondering(_size,Wonderings.StarBed.Indexes)
+	if reference0 != ""; _num = reference0
+	
+	if _num != -1
+	{
+		Wonderings.StarBed.Indexes[_num] = 1
+		Wonderings.StarBed[_num]
+	}
+	else
+	{
+		parallel Wonderings.StarBed
+	}
+}
+
+PickWondering : nonoverlap_pool
+{
+	_total = _argv[0]
+	_argv[0] = IARRAY //Erase the number of total entries
+	_array = _argv
+	
+	_available = IARRAY
+	for _i = 0; _i < _total; _i++
+	{
+		if _array[_i] != 1; _available ,= _i
+	}
+	
+	if ARRAYSIZE(_available) > 0
+	{
+		_i = ANY(_available)
+		_i
+	}
+	else; -1
 }
 
 OnTalkRateChange
