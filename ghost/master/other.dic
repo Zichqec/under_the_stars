@@ -41,7 +41,9 @@ OnKeyPress
 //Happens about 30 seconds after a script ends, by default, to bring them back to normal poses
 OnSurfaceRestore
 {
-	"\1\s[-1]\0\s[0]"
+	"\1\s[-1]"
+	--
+	"\0\s[0]"
 }
 
 OnWindowStateRestore
@@ -54,9 +56,16 @@ On_homeurl
 	"https://raw.githubusercontent.com/Zichqec/under_the_stars/main/"
 }
 
+br
+{
+	//Yes I am coding this from scratch
+	if SHIORI3FW.BalloonName == "Reflections of Starlight"; "\n"
+	else; " "
+}
+
 
 //—————————————————————————————— Right click menu links ——————————————————————————————
-
+/*
 //Takes an array of alternating names and urls, and formats them for use with the right click menu
 FormatLinks : all
 {
@@ -68,6 +77,7 @@ FormatLinks : all
 		else; "%ASC(1)"
 	}
 }
+
 
 On_sakura.recommendsites
 {
@@ -102,71 +112,4 @@ recommendsites_kero : array
 {
 	"These labels can be anything you want";	"https://link.example.com/link/to/whatever/here/once/more/"
 }
-
-
-//—————————————————————————————— User pronoun related ——————————————————————————————
-
-they
-{
-	if SHIORI3FW.UserSex == "male"; "he"
-	elseif SHIORI3FW.UserSex == "female"; "she"
-	else; "they"
-}
-
-them
-{
-	if SHIORI3FW.UserSex == "male"; "him"
-	elseif SHIORI3FW.UserSex == "female"; "her"
-	else; "them"
-}
-
-their
-{
-	if SHIORI3FW.UserSex == "male"; "his"
-	elseif SHIORI3FW.UserSex == "female"; "her"
-	else; "their"
-}
-
-theirs
-{
-	if SHIORI3FW.UserSex == "male"; "his"
-	elseif SHIORI3FW.UserSex == "female"; "hers"
-	else; "theirs"
-}
-
-themself
-{
-	if SHIORI3FW.UserSex == "male"; "himself"
-	elseif SHIORI3FW.UserSex == "female"; "herself"
-	else; "themself"
-}
-
-//%(they) %(p('are','is'))
-//You can change the name of this function if you want! I kept it short so it's fast to type
-p
-{
-	if SHIORI3FW.UserSex == "undef"; _argv[0] //they are
-	else; _argv[1] //he is/she is
-}
-
-/*
-
-An example of the above setup:
-"%(they) %(p('were','was')) looking for that earlier, I'll ask if %(they)'%(p('ve','s')) found it."
-
-If using they, the %(p) functions will return the first word specified, resulting in:
-"they were looking for that earlier, I'll ask if they've found it."
-
-If not using they, for example if using she, it will return the second specified word instead, resulting in:
-"she was looking for that earlier, I'll ask if she's found it."
-
-With this function, you can quickly customize words that need to change based on whether it should be singular or plural. Just remember; the %(p) function is set up so that the first word you specify matches with the 'they' labels used on the pronoun functions. You can always switch that around if you like, too.
-
 */
-
-//This just makes %(username) match with the username determined by the SSP prefs, rather than having to use the %username environment variable which is *not* the same and which you can't do things like TOUPPER to.
-//If you want to have the user be able to set a nickname or something, you may want to change username to a variable instead and get rid of this!
-username
-{
-	SHIORI3FW.UserName
-}
