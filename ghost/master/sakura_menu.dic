@@ -1,13 +1,13 @@
 OnMouseDoubleClick
 {
-	if reference5 == 0 && reference0 == 0; OnSakuraMenu
+	if reference5 == 0 && reference3 == 0; OnSakuraMenu
 }
 
 OnSakuraMenu : all
 {
 	"\C\![lock,balloonrepaint]\c\0\s[0]\b[0]\![set,autoscroll,disable]\_q\f[anchorvisitedfontcolor,default.anchor]"
 	
-	if SHIORI3FW.BalloonName == "Reflections of Starlight"; "\n[300]"
+	if SHIORI3FW.BalloonName == "Reflections of Starlight"; "\n[290]"
 	
 	"\![*]\q[Reflect,OnAiTalk]"
 	if LastTalk != ""; "  \![*]\q[Revisit reflection,OnLastTalk]"
@@ -16,7 +16,7 @@ OnSakuraMenu : all
 	"\![*]\q[Wonderings,OnWonderings]\n\n"
 	
 	"\![*]Frequency of reflections:\n     "
-	_talkrate = ("30,30s","60,1m","180,3m","300,5m","600,10m")
+	_talkrate = ("0,Off","30,30s","60,1m","180,3m","300,5m","600,10m")
 	foreach _talkrate; _rate
 	{
 		switch aitalkinterval == TOINT(_rate[0])
