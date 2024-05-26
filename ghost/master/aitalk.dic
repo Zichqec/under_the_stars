@@ -9,7 +9,7 @@ OnAiTalk
 		LastTalk = ChainTalk
 	}
 	
-	//I'm going to let autopause pick these up... I only just now realized that not having a space on the end makes ellipsis not count for autopause
+	//I'm going to let autopause pick these up... I only just now realized that not having a space on the end makes ellipsis not count for autopause. Might have to adjust later depending on if this behavior is changed. (\_w[5000] was making it awkward to get into the menu...)
 	if "\e" _in_ LastTalk; LastTalk = REPLACE(LastTalk,"\e"," \e")
 	else; LastTalk += " "
 	
