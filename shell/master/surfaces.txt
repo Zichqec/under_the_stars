@@ -1,21 +1,48 @@
+﻿charset,UTF-8
 descript
 {
-	version,1
+version,1
+collision-sort,descend
 }
 
-//—————————————————————————————— Sakura surfaces ——————————————————————————————
-
-surface0
+surface0-4,20-24
 {
-	
+element0,base,surface100.png,0,0
+animation0.interval,runonce
+animation0.option,background
+animation0.pattern0,overlay,200,0,0,0
 }
 
-surface1-4,20-24
+surface20-24
 {
-	element0,overlay,surface0.png,0,0
+element2,overlay,surface101.png,0,0
 }
 
-//—————————————————————————————— Kero surfaces ——————————————————————————————
+surface0,20
+{
+element1,overlay,surface150.png,0,0
+}
+
+surface1,21
+{
+element1,overlay,surface151.png,0,0
+}
+
+surface2,22
+{
+element1,overlay,surface152.png,0,0
+}
+
+surface3,23
+{
+element1,overlay,surface153.png,0,0
+}
+
+surface4,24
+{
+element1,overlay,surface154.png,0,0
+}
+
 
 surface10
 {

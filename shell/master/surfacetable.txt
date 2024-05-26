@@ -1,0 +1,32 @@
+﻿charset,UTF-8
+
+group,pose0
+{
+0,wonder
+1,frown eyeopen
+2,frown eyeclose
+3,smile eyeopen
+4,smile eyeclose
+}
+
+group,pose1
+{
+20,wonder
+21,frown eyeopen
+22,frown eyeclose
+23,smile eyeopen
+24,smile eyeclose
+}
+
+group,__disabled
+{
+10,kero
+100,base
+101,arm
+150,face_wonder
+151,face_frown_eyeopen
+152,face_frown_eyeclose
+153,face_smile_eyeopen
+154,face_smile_eyeclose
+200,water
+}
