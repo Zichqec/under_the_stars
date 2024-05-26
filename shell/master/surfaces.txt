@@ -8,9 +8,19 @@ collision-sort,descend
 surface0-4,20-24
 {
 element0,base,surface100.png,0,0
-animation0.interval,runonce
-animation0.option,background
+animation0.interval,always
+animation0.option,shared-index+background
 animation0.pattern0,overlay,200,0,0,0
+animation0.pattern1,overlay,201,0-5000,0,0
+animation0.pattern2,overlay,202,100-200,0,0
+animation0.pattern3,overlay,203,100-200,0,0
+animation0.pattern4,overlay,204,100-200,0,0
+animation0.pattern5,overlay,200,100-200,0,0
+animation0.pattern6,overlay,204,100-5000,0,0
+animation0.pattern7,overlay,203,100-200,0,0
+animation0.pattern8,overlay,202,100-200,0,0
+animation0.pattern9,overlay,201,100-200,0,0
+animation0.pattern10,overlay,200,100-200,0,0
 }
 
 surface20-24
@@ -41,6 +51,28 @@ element1,overlay,surface153.png,0,0
 surface4,24
 {
 element1,overlay,surface154.png,0,0
+}
+
+surface0,3,20,23
+{
+animation1.interval,periodic,2
+animation1.option,shared-index
+animation1.pattern0,overlay,302,0-2000,0,0
+animation1.pattern1,overlay,301,50,0,0
+animation1.pattern2,overlay,300,50,0,0
+animation1.pattern3,overlay,-1,50,0,0
+animation1.pattern4,overlay,-1,80-250,0,0
+}
+
+surface1,21
+{
+animation1.interval,periodic,2
+animation1.option,shared-index
+animation1.pattern0,overlay,312,0-2000,0,0
+animation1.pattern1,overlay,311,50,0,0
+animation1.pattern2,overlay,310,50,0,0
+animation1.pattern3,overlay,-1,50,0,0
+animation1.pattern4,overlay,-1,80-250,0,0
 }
 
 

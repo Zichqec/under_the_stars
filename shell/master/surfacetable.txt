@@ -6,7 +6,7 @@ group,pose0
 1,frown eyeopen
 2,frown eyeclose
 3,smile eyeopen
-4,smile eyeclose
+4,smile eyeopen
 }
 
 group,pose1
@@ -15,7 +15,7 @@ group,pose1
 21,frown eyeopen
 22,frown eyeclose
 23,smile eyeopen
-24,smile eyeclose
+24,smile eyeopen
 }
 
 group,__disabled
@@ -27,6 +27,16 @@ group,__disabled
 151,face_frown_eyeopen
 152,face_frown_eyeclose
 153,face_smile_eyeopen
-154,face_smile_eyeclose
-200,water
+154,face_smile_eyeopen
+200,water0
+201,water1
+202,water2
+203,water3
+204,water4
+300,03blink0
+301,03blink1
+302,03blink2
+310,1blink0
+311,1blink1
+312,1blink2
 }

@@ -1,10 +1,10 @@
-charset,UTF-8
+﻿charset,UTF-8
 type,shell
 name,Default Shell
 id,default
 
-craftman,YudiDoodles & OmochiYoichi
-craftmanw,YudiDoodles & おもちよいち (OmochiYoichi)
+craftman,YudiDoodles & Zichqec & OmochiYoichi
+craftmanw,YudiDoodles & Zichqec & おもちよいち (OmochiYoichi)
 craftmanurl,https://github.com/Zichqec/under_the_stars
 
 readme,readme.txt
@@ -16,7 +16,6 @@ sakura.balloon.offsetx,0
 sakura.balloon.offsety,0
 kero.balloon.offsetx,0
 kero.balloon.offsety,0
-
 
 menu.foreground.font.color.r,255
 menu.foreground.font.color.g,255
