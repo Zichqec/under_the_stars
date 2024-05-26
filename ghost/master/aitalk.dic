@@ -44,6 +44,20 @@ RandomTalk : nonoverlap_pool
 	"\0\b[6]\s[21]The star bed is bouncier than I expected."
 	"\0\b[6]\s[4]The currents in the bright water are so gentle... \s[22]maybe it's a seasonal thing?"
 	"\0\b[6]\s[23]Is that a fish? \s[3]It's so far up in the bright water!"
+	"\0\b[6]\s[0]The bright water is vast... It's like it goes on forever."
+	"\0\b[6]\s[1]I wonder if there's anything else here at the star bed... Maybe I should keep an eye out."
+	"\0\b[6]\s[4]It's so... peaceful here."
+	"\0\b[6]\s[0]Some of the stars are so much brighter than the others! \s[1]They could be tribe leaders...?"
+	"\0\b[6]\s[24]It's like someone scattered glowing grains of sand everywhere..."
+	"\0\b[6]\s[0]... Are they friendly?"
+	"\0\b[6]\s[24]Swimming among the glowing lights... \s[23]That would be so cool! I have to find a way up there."
+	"\0\b[6]\s[0]Maybe I should come back with a stone... \s[3]If I throw it hard enough, maybe I could knock some of them down here!"
+	"\0\b[6]\s[1]The bubbles... they seem to mix with the bright water. Interesting... \s[21]Maybe I can learn from them."
+	"\0\b[6]\s[20]How long have I been here, staring at them...?"
+	"\0\b[6]\s[20]I wish I could get a little closer... \s[23]A lot closer."
+	"\0\b[6]\s[20]Thousands and thousands... I wonder if%(br)it's even possible to count them all up? Are there enough numbers for that?"
+	"\0\b[6]\s[3]Being here is such a rush! My scales are itching to explore...! ... \s[21]But I'm not sure how to get further than this..."
+	"\0\b[6]\s[1]It's strange, everything feels less... \f[italic,1]heavy\f[italic,default] here. \s[21]The dark water is a lot cozier than the bright water..."
 }
 
 chain.is_that_a_whale
