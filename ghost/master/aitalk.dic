@@ -9,8 +9,9 @@ OnAiTalk
 		LastTalk = ChainTalk
 	}
 	
-	if "\e" _in_ LastTalk; LastTalk = REPLACE(LastTalk,"\e","\w8\w8 \e")
-	else; LastTalk += "\w8\w8 "
+	//I'm going to let autopause pick these up... I only just now realized that not having a space on the end makes ellipsis not count for autopause
+	if "\e" _in_ LastTalk; LastTalk = REPLACE(LastTalk,"\e"," \e")
+	else; LastTalk += " "
 	
 	LastTalk
 }
@@ -25,7 +26,7 @@ RandomTalk : nonoverlap_pool
 	"\0\b[6]\s[2]Why don't the stars ever drift down%(br)here...? \s[22]Does something eat them first? Or... \s[21]do they not die?"
 	"\0\b[6]\s[23]I bet there's lots of interesting krill up there. \s[3]Unless stars \f[italic,1]are\f[italic,default] krill? ... \s[24]That \f[italic,1]would\f[italic,default] be pretty interesting krill, if that was true."
 	"\0\b[6]\s[0]Whoa... What is that big lumpy thing out there? Is that a whale...?\e:chain=chain.is_that_a_whale"
-	"\0\b[6]\s[0]I don't think I could count ever count them all, even if I stayed here for tides and tides..."
+	"\0\b[6]\s[0]I don't think I could ever count them all, even if I stayed here for tides and tides..."
 	"\0\b[6]\s[3]They're so %(sparkly)... I could watch them forever."
 	"\0\b[6]\s[0]Are they some kind of glowing fish...? \s[23]I bet they taste like %(tastyfish)!"
 	"\0\b[6]\s[0]I wonder if they're %(eyes)...?"
