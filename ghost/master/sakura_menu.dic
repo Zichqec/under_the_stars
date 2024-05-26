@@ -13,7 +13,7 @@ OnSakuraMenu : all
 	if SHIORI3FW.BalloonName == "Reflections of Starlight"; "\n[290]"
 	
 	"\![*]\q[Reflect,OnAiTalk]"
-	if LastTalk != ""; "  \![*]\q[Revisit reflection,OnLastTalk]"
+	if LastTalk != ""; "  \![*]\q[Remember,OnLastTalk]"
 	"\n\n"
 	
 	"\![*]\q[Wonderings,OnWonderings]\n\n"
