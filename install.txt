@@ -3,3 +3,5 @@ type,ghost
 
 name,Under the Stars
 directory,under_the_stars_goyz
+
+balloon.directory,reflections_of_starlight_oz
