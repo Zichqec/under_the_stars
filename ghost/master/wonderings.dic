@@ -29,7 +29,7 @@ Wonderings.Family : array
 		"\b[6]\s[2]Wrangling the little one would be easier if we brought something to eat, instead of needing to hunt... \s[21]what's best to bring...?"
 		"\0\b[6]\s[22]Sandscrabbler fish is their favorite, but carrying those around will lure sharks."
 		"\0\b[6]\s[21]Masked crab, maybe...? We would need to stop whenever the little one was hungry to help... Their bite isn't strong enough to break the shell on their own yet."
-		"\0\b[6]\s[20]Oh! \s[3]Bacillmoss balls would be perfect. I wonder if they taste any different on the surface...\e:chain=end"
+		"\0\b[6]\s[20]Oh! \s[3]Bacillmoss balls would be perfect. I wonder if they taste any different near the star bed...\e:chain=end"
 	}}CHAIN
 
 	chain.family_worries
