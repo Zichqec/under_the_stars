@@ -8,6 +8,28 @@ constellations
 	"fish"
 }
 
+eels
+{
+	"eels"
+	"stingrays"
+	"jellyfish"
+	"seafolk"
+	"lumejellies"
+	"lumpy whales"
+	"four-clawed lobsters"
+	"stonesquid"
+}
+
+eyes
+{
+	"eyes"
+	"glowing shrimp"
+	"sparkly stones"
+	"lumejellies"
+	"glowing bubbles"
+	"other seafolk"
+}
+
 group
 {
 	"group"
@@ -43,14 +65,4 @@ tastyfish
 	"salt flat flounder"
 	"that glue mother uses on her projects"
 	"preserved seaweed"
-}
-
-eyes
-{
-	"eyes"
-	"glowing shrimp"
-	"sparkly stones"
-	"lumejellies"
-	"glowing bubbles"
-	"other seafolk"
 }

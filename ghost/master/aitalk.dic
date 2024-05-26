@@ -39,6 +39,11 @@ RandomTalk : nonoverlap_pool
 	"\0\b[6]\s[24]Do my glows look like stars to the stars?"
 	"\0\b[6]\s[20]I heard a rumbling in the distance... \s[22]I wonder what it was?"
 	"\0\b[6]\s[24]If I knew what stars eat, I could lure one down..."
+	"\0\b[6]\s[22]From that high up, does the dark water look like a normal trench?"
+	"\0\b[6]\s[20]I wonder how many %(eels) are up there?"
+	"\0\b[6]\s[21]The star bed is bouncier than I expected."
+	"\0\b[6]\s[4]The currents in the bright water are so gentle... \s[22]maybe it's a seasonal thing?"
+	"\0\b[6]\s[23]Is that a fish? \s[3]It's so far up in the bright water!"
 }
 
 chain.is_that_a_whale
