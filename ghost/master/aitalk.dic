@@ -33,6 +33,12 @@ RandomTalk : nonoverlap_pool
 	"\0\b[6]\s[22]They might sting when touched... When I find a way up there I'll have to be careful."
 	"\0\b[6]\s[0]It took a long time to reach the star bed... \s[20]I wonder how much longer it would take to swim all the way to the stars? They seem so far away still... \s[22]I guess it depends on how fast I can swim through the bright water..."
 	"\0\b[6]\s[2]Ah, my eyes aren't used to looking through the bright water... Maybe I should rest them a little..."
+	"\0\b[6]\s[0]You can see so far when it's this bright..."
+	"\0\b[6]\s[23]I should practice my fin language, in case I swim into other seafolk up here."
+	"\0\b[6]\s[0]One... Two... \s[20]Thirty..."
+	"\0\b[6]\s[24]Do my glows look like stars to the stars?"
+	"\0\b[6]\s[20]I heard a rumbling in the distance... \s[22]I wonder what it was?"
+	"\0\b[6]\s[24]If I knew what stars eat, I could lure one down..."
 }
 
 chain.is_that_a_whale
