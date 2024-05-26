@@ -14,30 +14,30 @@ Wonderings.Family : array
 	"\0\b[6]\s[3]It would be nice to bring everyone out here next time, to see the stars together.\e:chain=chain.family_making_plans"
 }
 
-chain.family_lumejellies
-{{CHAIN
-	"\b[6]\s[3]She always spends a whole tide getting ready, making sure we have a nice nest in the sand by the colonies."
-	"\b[6]\s[4]We always have to be at least three tail lengths away from the polyps, or else our swimming might disturb their currents and throw the season off."
-	"\b[6]\s[21]I've never seen this many lumejellies in one place, though..."
-	"\b[6]\s[20]I don't know if there are half as many lumejellies in the entire \f[italic,1]dark water\f[italic,default] as there are in this part of the bright water.\e:chain=end"
-}}CHAIN
+	chain.family_lumejellies
+	{{CHAIN
+		"\0\b[6]\s[3]She always spends a whole tide getting ready, making sure we have a nice nest in the sand by the colonies."
+		"\0\b[6]\s[4]We always have to be at least three tail lengths away from the polyps, or else our swimming might disturb their currents and throw the season off."
+		"\0\b[6]\s[21]I've never seen this many lumejellies in one place, though..."
+		"\0\b[6]\s[20]I don't know if there are half as many lumejellies in the entire \f[italic,1]dark water\f[italic,default] as there are in this part of the bright water.\e:chain=end"
+	}}CHAIN
 
-chain.family_planning
-{{CHAIN
-	"\b[6]\s[1]It \f[italic,1]would\f[italic,default] need plenty of planning, though..."
-	"\b[6]\s[3]Having both mother and father means we could bring the little one. \s[4]They would get themself lost swimming this far without all of us keeping an eye on them."
-	"\b[6]\s[2]Wrangling the little one would be easier if we brought something to eat, instead of needing to hunt... \s[21]what's best to bring...?"
-	"\b[6]\s[22]Sandscrabbler fish is their favorite, but carrying those around will lure sharks."
-	"\b[6]\s[21]Masked crab, maybe...? We would need to stop whenever the little one was hungry to help... Their bite isn't strong enough to break the shell on their own yet."
-	"\b[6]\s[20]Oh! \s[3]Bacillmoss balls would be perfect. I wonder if they taste any different on the surface...\e:chain=end"
-}}CHAIN
+	chain.family_making_plans
+	{{CHAIN
+		"\0\b[6]\s[1]It \f[italic,1]would\f[italic,default] need plenty of planning, though..."
+		"\0\b[6]\s[3]Having both mother and father means we could bring the little one. \s[4]They would get themself lost swimming this far without all of us keeping an eye on them."
+		"\b[6]\s[2]Wrangling the little one would be easier if we brought something to eat, instead of needing to hunt... \s[21]what's best to bring...?"
+		"\0\b[6]\s[22]Sandscrabbler fish is their favorite, but carrying those around will lure sharks."
+		"\0\b[6]\s[21]Masked crab, maybe...? We would need to stop whenever the little one was hungry to help... Their bite isn't strong enough to break the shell on their own yet."
+		"\0\b[6]\s[20]Oh! \s[3]Bacillmoss balls would be perfect. I wonder if they taste any different on the surface...\e:chain=end"
+	}}CHAIN
 
-chain.family_worries
-{{CHAIN
-	"\b[6]\s[2]I didn't think making it all the way here would take as long as it did... \s[1]I'm sure he'll be expecting me back soon..."
-	"\b[6]\s[22]... Still... \s[24]I'm sure he'll understand, \s[3]once I tell him about \f[italic,1]this\f[italic,default]."
-	"\b[6]\s[3]Maybe he'll come with me next time if I show him it's safe.\e:chain=end"
-}}CHAIN
+	chain.family_worries
+	{{CHAIN
+		"\0\b[6]\s[2]I didn't think making it all the way here would take as long as it did... \s[1]I'm sure he'll be expecting me back soon..."
+		"\0\b[6]\s[22]... Still... \s[24]I'm sure he'll understand, \s[3]once I tell him about \f[italic,1]this\f[italic,default]."
+		"\0\b[6]\s[3]Maybe he'll come with me next time if I show him it's safe.\e:chain=end"
+	}}CHAIN
 
 
 
@@ -49,48 +49,56 @@ Wonderings.Home : array
 	"\0\b[6]\s[3]Father says there's reefs near land, too. \s[23]I wonder where?\e:chain=chain.home_coral"
 }
 
-chain.home_coral
-{{CHAIN
-	"\0\b[6]\s[4]I want to see what it's like. \s[3]It's always the most fun playing around the reef."
-	"\0\b[6]\s[3]If I bring a piece back, mother could make a new fastener with it."
-	"\0\b[6]\s[4]She makes the best fasteners. They never pinch my fins too hard. I can wear them for tides and tides.\e:chain=end"
-}}CHAIN
+	chain.home_coral
+	{{CHAIN
+		"\0\b[6]\s[4]I want to see what it's like. \s[3]It's always the most fun playing around the reef."
+		"\0\b[6]\s[3]If I bring a piece back, mother could make a new fastener with it."
+		"\0\b[6]\s[4]She makes the best fasteners. They never pinch my fins too hard. I can wear them for tides and tides.\e:chain=end"
+	}}CHAIN
 
-chain.home_house
-{{CHAIN
-	"\0\b[6]\s[22]Do they live closer to land? Or... \s[21]maybe they float while they sleep?"
-	"\0\b[6]\s[1]It's hard to imagine getting comfortable without mud and some good rocks. I'd be flailing around all tide."
-	"\0\b[6]\s[24]I'd miss our skeleton, too. It doesn't feel like home without bones overhead."
-	"\0\b[6]\s[20]I wonder what whales look like up here..."
-}}CHAIN
+	chain.home_house
+	{{CHAIN
+		"\0\b[6]\s[22]Do they live closer to land? Or... \s[21]maybe they float while they sleep?"
+		"\0\b[6]\s[1]It's hard to imagine getting comfortable without mud and some good rocks. I'd be flailing around all tide."
+		"\0\b[6]\s[24]I'd miss our skeleton, too. It doesn't feel like home without bones overhead."
+		"\0\b[6]\s[20]I wonder what whales look like up here..."
+	}}CHAIN
 
-chain.home_vents
-{{CHAIN
-	"\0\b[6]\s[21]Where does the heat come from? \s[22]There aren't any hot vents around..."
-	"\0\b[6]\s[21]I haven't felt any geysers, \s[2]and it doesn't smell like there are springs nearby."
-	"\0\b[6]\s[1]I think I would have noticed if there was a volcano nearby, too. They're hard to miss..."
-	"\0\b[6]\s[2]I wonder... \s[21]maybe... \s[20]are stars warm...?\e:chain=end"
-}}CHAIN
+	chain.home_vents
+	{{CHAIN
+		"\0\b[6]\s[21]Where does the heat come from? \s[22]There aren't any hot vents around..."
+		"\0\b[6]\s[21]I haven't felt any geysers, \s[2]and it doesn't smell like there are springs nearby."
+		"\0\b[6]\s[1]I think I would have noticed if there was a volcano nearby, too. They're hard to miss..."
+		"\0\b[6]\s[2]I wonder... \s[21]maybe... \s[20]are stars warm...?\e:chain=end"
+	}}CHAIN
 
 
 
 
 Wonderings.StarBed : array
 {
-	"\0\b[6]\s[1]It gets uncomfortable above the star bed after a while...\e:chain=chain.starbed_dry"
 	"\0\b[6]\s[20]How does anyone swim up in the bright water?\e:chain=chain.starbed_air"
+	"\0\b[6]\s[1]It gets uncomfortable above the star bed after a while...\e:chain=chain.starbed_dry"
+	"\0\b[6]\s[1]I'm not sure how to describe it... It's almost like a big, flat stone...? \s[21]If a stone were made of water...\e:chain=chain.starbed_horizon"
+	"\0\b[6]\s[21]Why don't the bright water and dark water mix...? Does something keep them apart?"
 }
 
-chain.starbed_air
-{{CHAIN
-	"\b[6]\s[24]I saw a star move... so someone \f[italic,1]must\f[italic,default] be up there moving them."
-	"\b[6]\s[21]No matter how fast I swim when I ascend, I drop back to the star bed..."
-	"\b[6]\s[1]If I can get up there, I could figure out what they \f[italic,1]really\f[italic,default] are.\e:chain=end"
-}}CHAIN
+	chain.starbed_air
+	{{CHAIN
+		"\0\b[6]\s[24]I saw a star move... so someone \f[italic,1]must\f[italic,default] be up there moving them."
+		"\0\b[6]\s[21]No matter how fast I swim when I ascend, I drop back to the star bed..."
+		"\0\b[6]\s[1]If I can get up there, I could figure out what they \f[italic,1]really\f[italic,default] are.\e:chain=end"
+	}}CHAIN
 
-chain.starbed_dry
-{{CHAIN
-	"\b[6]\s[21]My fins get itchy and sore... \s[22]but it isn't like a rash...?"
-	"\b[6]\s[22]Staying under the star bed for a while makes it better, \s[24]so it's probably fine."
-	"\b[6]\s[23]I don't think father needs to know about it.\e:chain=end"
-}}CHAIN
+	chain.starbed_dry
+	{{CHAIN
+		"\0\b[6]\s[21]My fins get itchy and sore... \s[22]but it isn't like a rash...?"
+		"\0\b[6]\s[22]Staying under the star bed for a while makes it better, \s[24]so it's probably fine."
+		"\0\b[6]\s[23]I don't think father needs to know about it.\e:chain=end"
+	}}CHAIN
+
+	chain.starbed_horizon
+	{{CHAIN
+		"\0\b[6]\s[21]I can see the edges of it, where the stars stop..."
+		"\0\b[6]\s[1]The stars get closer to the dark water over there... Maybe if I go that way, I can reach them...?\e:chain=end"
+	}}CHAIN

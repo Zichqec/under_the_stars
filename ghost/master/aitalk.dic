@@ -24,4 +24,20 @@ RandomTalk : nonoverlap_pool
 	"\0\b[6]\s[3]Ohh, my tail won't stop wriggling...!"
 	"\0\b[6]\s[2]Why don't the stars ever drift down%(br)here...? \s[22]Does something eat them first? Or... \s[21]do they not die?"
 	"\0\b[6]\s[23]I bet there's lots of interesting krill up there. \s[3]Unless stars \f[italic,1]are\f[italic,default] krill? ... \s[24]That \f[italic,1]would\f[italic,default] be pretty interesting krill, if that was true."
+	"\0\b[6]\s[0]Whoa... What is that big lumpy thing out there? Is that a whale...?\e:chain=chain.is_that_a_whale"
+	"\0\b[6]\s[0]I don't think I could count ever count them all, even if I stayed here for tides and tides..."
+	"\0\b[6]\s[3]They're so %(sparkly)... I could watch them forever."
+	"\0\b[6]\s[0]Are they some kind of glowing fish...? \s[23]I bet they taste like %(tastyfish)!"
+	"\0\b[6]\s[0]I wonder if they're %(eyes)...?"
+	"\0\b[6]\s[22]They might sting when touched... When I find a way up there I'll have to be careful."
+	"\0\b[6]\s[0]It took a long time to reach the star bed... \s[20]I wonder how much longer it would take to swim all the way to the stars? They seem so far away still... \s[22]I guess it depends on how fast I can swim through the bright water..."
+	"\0\b[6]\s[2]Ah, my eyes aren't used to looking through the bright water... Maybe I should rest them a little..."
 }
+
+chain.is_that_a_whale
+{{CHAIN
+	"\0\b[6]\s[0]It's so far away, I can't sense it at all... \s[23]It must be \f[italic,1]huge!\f[italic,default]"
+	"\0\b[6]\s[21]Or maybe it's because it's in the bright water? \s[22]I don't sense anything out there..."
+	"\0\b[6]\s[0]Whatever it is, it's blocking out the stars..."
+	"\0\b[6]\s[23]Looks like it's moving though, if a bit slowly... It'll be out of the way soon.\e:chain=end"
+}}CHAIN

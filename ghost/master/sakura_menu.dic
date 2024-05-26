@@ -240,8 +240,10 @@ On_balloon_tooltip : all
 		{
 			switch reference2
 			{
-				"Bright water"
+				"Swimming in bright water"
 				"Itchy"
+				"Flat stone"
+				"They don't mix?"
 			}
 		}
 	}
