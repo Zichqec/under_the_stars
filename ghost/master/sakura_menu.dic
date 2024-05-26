@@ -6,7 +6,9 @@ OnMouseDoubleClick
 OnSakuraMenu : all
 {
 	if SHIORI3FW.Eventid != "OnMouseDoubleClick"; "\C\![lock,balloonrepaint]\c"
-	"\0\s[0]\b[0]\![set,autoscroll,disable]\_q\f[anchorvisitedfontcolor,default.anchor]"
+	"\0"
+	if SHIORI3FW.IsVisible[0] != 1; "\s[0]"
+	"\b[0]\![set,autoscroll,disable]\_q\f[anchorvisitedfontcolor,default.anchor]"
 	
 	if SHIORI3FW.BalloonName == "Reflections of Starlight"; "\n[290]"
 	
