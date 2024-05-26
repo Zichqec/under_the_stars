@@ -20,7 +20,7 @@ RandomTalk : nonoverlap_pool
 {
 	"\0\b[6]\s[0]That %(group) of stars looks like %(constellations)..."
 	"\0\b[6]\s[20]Imagine if each of those stars was a pearl... \s[23]There would be so many oysters! \s[24]Or one very hard working oyster..."
-	"\0\b[6]\s[22]Maybe if you wove together enough kelp,%(br)you could make a bed that floats along the star bed..."
+	"\0\b[6]\s[22]Maybe if you wove together enough kelp,%(br)you could make a nest that floats along the star bed..."
 	"\0\b[6]\s[24]How far would you have to swim to see different stars?"
 	"\0\b[6]\s[3]Ohh, my tail won't stop wriggling...!"
 	"\0\b[6]\s[2]Why don't the stars ever drift down%(br)here...? \s[22]Does something eat them first? Or... \s[21]do they not die?"
