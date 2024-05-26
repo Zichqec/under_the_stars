@@ -44,13 +44,12 @@ OnBoot
 {
 	"\1\s[-1]\0\s[0]"
 	--
-	"boot"
+	"\0\b[6]\s[4]... \n\n[half]\s[2]...? \s[0]...! \s[3]They're still here!"
 }
 
 OnClose
 {
-	"\0\s[0]Farewell."
-	"\0\s[0]Goodbye."
+	"\0\b[6]\s[1]Humm... \s[2]ah... \s[1]maybe I'll just... \s[2]close my eyes for a little... z z z..."
 	--
 	"\w8\w8\-"
 }
